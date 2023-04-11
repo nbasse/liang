@@ -72,13 +72,13 @@ typedef std::function<void()> RebootNeededEvent;
 
 #define BUMPER_PIN 19
 
-#define LOW_SPEED 215
-#define FULL_SPEED 255
+#define LOW_SPEED 100
+#define FULL_SPEED 130 // Range 1 - 255  //TODO Tune Speeds when final wheel assembly and gearing is done
 #define NORMAL_ACCELERATION_TIME 400
 #define SHORT_ACCELERATION_TIME 100
 
-#define CUTTER_SPEED 255
-#define CUTTER_SPEED_BOOST 255
+#define CUTTER_SPEED 205        // 205/255 => limit voltage to 12V when battery is at 15V to not damage ESC for the Cutter Outrunner //TODO: Update when switching battery voltage
+#define CUTTER_SPEED_BOOST 205  // 205/255 => limit voltage to 12V when battery is at 15V to not damage ESC for the Cutter Outrunner //TODO: Update when switching battery voltage
 
 #define TILT_ANGLE 35;
 #define FLIP_ANGLE 110;
