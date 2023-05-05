@@ -72,8 +72,8 @@ typedef std::function<void()> RebootNeededEvent;
 
 #define BUMPER_PIN 19
 
-#define LOW_SPEED 100
-#define FULL_SPEED 130 // Range 1 - 255  //TODO Tune Speeds when final wheel assembly and gearing is done
+#define LOW_SPEED 180
+#define FULL_SPEED 230 // Range 1 - 255  //TODO Tune Speeds when final wheel assembly and gearing is done
 #define NORMAL_ACCELERATION_TIME 400
 #define SHORT_ACCELERATION_TIME 100
 
