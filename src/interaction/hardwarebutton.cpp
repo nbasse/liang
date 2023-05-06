@@ -22,8 +22,9 @@ bool HardwareButton::GetConsumablePress() {
 
 void HardwareButton::check() {
   if (digitalRead(pin) == LOW) {
-      pressedAt = millis();
-      pressed = true;
+        pressedAt = millis();
+        pressed = true;
+        logger->log("HW button pressed");
   } 
 
   else{
