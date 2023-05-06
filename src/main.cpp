@@ -198,7 +198,7 @@ void pollPollables(void * parameter) {
         presenters[i]->PresentMowerModel(&mowerModel, useFullResend);
       }
     }
-    bootButton.check();
+    // bootButton.check();
     sw3Button.check();
 
     
