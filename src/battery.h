@@ -28,13 +28,13 @@
 #ifdef VOLTDIV_THEO
   // Voltage divider resistors (Same for both battery and charge connections)
   #define R_IN    330000  // Resistance in ohm of resistor connected between battery+ and analog input pin.
-  #define R_GND   82000   // Resistance in ohm of resistor connected between GND and analog input pin.
+  #define R_GND   43000   // Resistance in ohm of resistor connected between GND and analog input pin.
   #define VOLT_DIV ((R_IN+R_GND)/R_GND)
 #endif
 
 #ifdef VOLTDIV_EMPE
-  #define MEASURED_INPUT_V  13.94
-  #define MEASURED_DIV_V    2.750  // Voltage to GND from between R36 & R50
+  #define MEASURED_INPUT_V  15.07
+  #define MEASURED_DIV_V    1.730  // Voltage to GND from between R36 & R50
   #define VOLT_DIV (MEASURED_INPUT_V/MEASURED_DIV_V)
 #endif
 
