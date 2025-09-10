@@ -15,8 +15,8 @@
 #include "utils.h"
 
 // Voltages should be specified in V
-#define BATTERY_FULL       12.560 //TODO: Change according to actual battery used!
-#define BATTERY_EMPTY      10.400 //TODO: Change according to actual battery used!
+#define BATTERY_FULL       20.400 //TODO: Change according to actual battery used!
+#define BATTERY_EMPTY      17.800 //TODO: Change according to actual battery used!
 
 // Running average sample size
 #define FILTER        2000
