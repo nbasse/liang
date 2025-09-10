@@ -56,7 +56,7 @@ typedef std::function<void()> RebootNeededEvent;
 #define AUX_MOTOR_PWM_CHANNEL_BACKWARDS 6
 #define AUX_MOTOR_SENSE_PIN 39
 
-#define LOAD_LIMIT_WHEEL 175
+#define LOAD_LIMIT_WHEEL 90 // TODO fine tune this so it can sense obsticles but not false trigger in the grass
 // Load Limit unit conversion:
 // 0.1ohm shunt, 16 Gain Op-Amp, 11 bit (nonlinear) adc setting =>  1 mA ~= 1 load limit value
 #define LOAD_LIMIT_CUTTER 900
@@ -73,12 +73,12 @@ typedef std::function<void()> RebootNeededEvent;
 #define BUMPER_PIN 19
 
 #define LOW_SPEED 180
-#define FULL_SPEED 230 // Range 1 - 255  //TODO Tune Speeds when final wheel assembly and gearing is done
+#define FULL_SPEED 255 // Range 1 - 255  //TODO Tune Speeds when final wheel assembly and gearing is done
 #define NORMAL_ACCELERATION_TIME 400
 #define SHORT_ACCELERATION_TIME 100
 
-#define CUTTER_SPEED 205        // 205/255 => limit voltage to 12V when battery is at 15V to not damage ESC for the Cutter Outrunner //TODO: Update when switching battery voltage
-#define CUTTER_SPEED_BOOST 205  // 205/255 => limit voltage to 12V when battery is at 15V to not damage ESC for the Cutter Outrunner //TODO: Update when switching battery voltage
+#define CUTTER_SPEED 255        
+#define CUTTER_SPEED_BOOST 255  
 
 #define TILT_ANGLE 35;
 #define FLIP_ANGLE 110;
