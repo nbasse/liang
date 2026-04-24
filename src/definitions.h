@@ -10,7 +10,7 @@ typedef std::function<void()> RebootNeededEvent;
 #define INSIDE_BWF          86, 86
 #define OUTSIDE_BWF         5, 81
 
-#define BWF_CLOCKWISE 1 // 1 for clockwise, 0 for counterclockwise following of BWF
+#define BWF_CLOCKWISE 0 // 1 for clockwise, 0 for counterclockwise following of BWF
 
 #define LED_PIN 17
 #define SWITCH_3_PIN 13
